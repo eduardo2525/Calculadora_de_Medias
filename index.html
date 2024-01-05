@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="build/styles/main.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <img class="logo-img" src="./source/imagens/logo.png" alt="Capelo e Diploma">
+            <h1>Calculadora de Médias</h1>
+        </header>
+        <form>
+            <input type="text" id="materia" placeholder="Nome da Atividade">
+            <input type="number" id="nota" placeholder="Nota" min="0" max="10">
+            <button type="button" id="Adicionar">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-valor-final">---</td>
+                    <td id="media-resultado-final">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="modal">
+        <h2>Coloque a Média Escola</h2>
+        <form>
+            <input class="input--modal" type="number" placeholder="Média Escola" min="1" max="10">
+            <button type="button" id="button--modal">Enviar</button>
+        </form>
+        <p id="mensagem--input">"Preencha o campo menor ou igaul a 10"</p>
+        <span>
+            <p>Obrigatorio Preencher o Campo!</p>
+        </span>
+    </div>
+
+    <script src="source/scripts/script.js"></script>
 </body>
 </html>
