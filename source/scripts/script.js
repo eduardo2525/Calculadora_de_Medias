@@ -43,8 +43,8 @@ function adicionarLinha() {
     if (nota >= 11) {
         document.getElementById('materia').value = '';
         document.getElementById('nota').value = '';
-        document.getElementById('media-valor-final') = '';
-        document.getElementById('media-resultado-final') = '';
+        media.value = '';
+        mediaResultadoFinal.value = '';
     }
 
     atividades.push(materia)
